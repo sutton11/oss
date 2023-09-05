@@ -3,6 +3,7 @@
 
 name: Build and deploy Python app to Azure Web App - appservicespecialistosspythonwin1ffn7qg7l4p5yg
 
+
 on:
   push:
     branches:
