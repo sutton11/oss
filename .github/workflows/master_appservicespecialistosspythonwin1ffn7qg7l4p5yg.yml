@@ -35,5 +35,5 @@ jobs:
         with:
           app-name: 'appservicespecialistosspythonwin1ffn7qg7l4p5yg'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4D1C5DDD74BF4ECFBF38A40C093897D3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6EAE997F14D64D1E8ECA280CDB1FE998 }}
           package: '.\\app.zip'
