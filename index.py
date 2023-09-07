@@ -10,7 +10,6 @@ import os
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
 dash_app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app = dash_app.server
 
 df = pd.read_csv('data.csv', index_col=0, parse_dates=True)
 fig = px.bar(df, x="cars", y="values", color="real")
@@ -29,4 +28,4 @@ app.layout = html.Div(children=[
 
 if __name__ == '__main__':
     port= os.environ.get('PORT')
-    app.run_server(debug=False, host='0.0.0.0', port = port)
+    app.run_server(debug=False,  port = port)
