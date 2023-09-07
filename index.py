@@ -4,10 +4,13 @@ import dash_html_components as html
 import plotly.express as px
 import pandas as pd
 import os
-#test11
+import os
+
+
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+dash_app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash_app.server
 
 df = pd.read_csv('data.csv', index_col=0, parse_dates=True)
 fig = px.bar(df, x="cars", y="values", color="real")
