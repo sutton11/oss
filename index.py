@@ -26,7 +26,10 @@ app.layout = html.Div(children=[
         figure=fig
     )
 ])
-
+@app.callback(
+    Output('graph-with-slider','figure'),
+    Input('year-slider','value')
+)
 if __name__ == '__main__':
     port= os.environ.get('PORT')
-    application.run(debug=False, host = '0,0,0,0',  port = port)
+    app.run_server(debug=False, host = '0,0,0,0',  port = port)
